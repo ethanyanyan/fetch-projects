@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8080:8080"
+
+  backend_be:
+    build:
+      context: ./backend_be
+    ports:
+      - "8000:8000"
+
+  backend_ml:
+    build:
+      context: ./backend_ml
+    ports:
+      - "5000:5000"
