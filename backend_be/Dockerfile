@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["python3", "be.py"]
+CMD ["python3", "be.py", "--ip=0.0.0.0", "--port=8000", "--allow-root", ]

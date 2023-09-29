@@ -11,4 +11,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["python3", "ml.py"]
+CMD ["python3", "ml.py", "--ip=0.0.0.0", "--port=5000", "--allow-root", ]
