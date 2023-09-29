@@ -8,9 +8,8 @@ RUN apt-get update && apt-get install -y \
 # Set the working directory
 WORKDIR /app
 
-# Copy the requirements file and install dependencies
-COPY requirements.txt /app/
-RUN pip3 install --no-cache-dir -r requirements.txt
+# install dependencies
+RUN pip3 install Flask==2.3.2 Flask-Cors==4.0.0
 
 # Copy your Flask application code into the container
 COPY be.py /app/
