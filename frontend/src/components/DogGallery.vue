@@ -5,6 +5,7 @@
 
       <q-carousel
         animated
+        keep-alive
         v-model="slide"
         navigation
         infinite

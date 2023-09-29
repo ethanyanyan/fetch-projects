@@ -14,7 +14,7 @@ def split_data(data, start_date):
     val_data = data[data['Day_of_year'] >= start_day]
     return train_data, val_data
 
-def train_model(model, X_train, y_train, X_val, y_val, num_epochs=200000, fine_tune_epochs=50000):
+def train_model(model, X_train, y_train, X_val, y_val, num_epochs=240000, fine_tune_epochs=50000):
     criterion = nn.MSELoss()
     optimizer = torch.optim.SGD(model.parameters(), lr=0.00002)
     optimizer_ft = torch.optim.SGD(model.parameters(), lr=0.0000001)
@@ -77,7 +77,7 @@ with torch.no_grad():
     days_2022 = torch.FloatTensor([[i] for i in range(366, 731)]).view(-1, 1)
     predictions_2022 = model(days_2022).numpy() * 1e6
 
-# plot_results(X_train.numpy(), (y_train * 1e6).numpy(), X_val.numpy(), (y_val * 1e6).numpy(), days_2022.numpy(), predictions_2022)
+plot_results(X_train.numpy(), (y_train * 1e6).numpy(), X_val.numpy(), (y_val * 1e6).numpy(), days_2022.numpy(), predictions_2022)
 
 torch.save(model.state_dict(), 'linear_regression_model.pth')
 

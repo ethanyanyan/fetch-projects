@@ -38,12 +38,10 @@ def spend_points():
 
     # Sort transactions by timestamp (oldest first)
     sorted_transactions = sorted(user_transactions, key=lambda x: x['timestamp'])
-    print(sorted_transactions)
 
     spent_points = []
 
     for transaction in sorted_transactions:
-        print(user_points)
         if points_to_spend <= 0:
             break
 
@@ -70,4 +68,4 @@ def get_balance():
     return jsonify(user_points), 200
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8081)
+    app.run(port=8000)

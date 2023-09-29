@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5000
 
 # Define the command to run the application
-CMD ["python", "ml.py"]
+CMD ["python3", "ml.py"]

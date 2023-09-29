@@ -1,0 +1,75 @@
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+
+For the coding exercise, I chose to use Python as the programming language due to its simplicity and
+readability. Python is well-suited for web development tasks and provides excellent support for 
+building REST APIs. Flask was chosen as the web framework because it is lightweight and easy to set
+up, making it a good fit for this relatively small-scale API.
+
+I used Flask-CORS to enable cross-origin resource sharing, which is essential when developing web 
+applications to allow the frontend, which runs on a different domain or port, to communicate with 
+the API running on a separate server.
+
+
+
+2. What are the advantages and disadvantages of your solution?
+
+Advantages:
+
+Simplicity: The solution is relatively simple and easy to understand, making it accessible for 
+developers at various skill levels.
+Lightweight: Flask is a micro-framework, which means it doesn't come with unnecessary features or 
+bloat, making it efficient for small to medium-sized projects.
+Cross-Origin Support: Flask-CORS allows the API to handle requests from different origins, 
+facilitating integration with frontend applications.
+Disadvantages:
+
+Scalability: While Flask is excellent for small to medium-sized projects, it might not be the best 
+choice for large-scale applications due to its micro-framework nature.
+Limited Built-in Features: Flask provides only basic features, which means you might need to 
+implement additional functionality yourself or rely on third-party libraries.
+Lack of Built-in Database Integration: Flask doesn't come with built-in database support, so you 
+would need to choose and integrate a database separately if your application requires one.
+
+
+
+3. What has been a favorite school/personal project thus far? What about it challenged you?
+
+Favorite School/Personal Project: Database Transfer Script Enhancement
+
+Last summer during my internship at KiteSense, one of my favorite projects involved improving an 
+existing database transfer script. This project presented several challenges and opportunities for 
+optimization, and it allowed me to make a substantial impact on the company's data migration process
+
+Challenges Faced:
+
+Understanding Existing Systems: Initially, I had to delve deep into the company's existing database 
+migration process. This involved studying various scripts and API applications that were previously 
+used. Understanding these systems was challenging, as they were complex and had evolved over time.
+
+Combining Multiple Scripts: The existing process involved multiple scripts for different parts of 
+the data migration. My task was to create a more efficient script that could seamlessly combine 
+these existing scripts. This required a deep understanding of each script's purpose and how they 
+interacted.
+
+User-Friendly Design: To make the data migration process more efficient, I needed to design the 
+script to be user-friendly. It should be intuitive for other engineers to use without requiring 
+extensive documentation. Ensuring ease of use and a clear interface was an additional challenge.
+
+Achievements:
+
+Improved Efficiency: After analyzing and streamlining the process, I was able to significantly 
+speed up the data migration. What used to take days could now be completed in mere minutes, 
+resulting in a substantial increase in productivity and reduced downtime.
+
+Script Integration: I successfully combined the functionality of multiple existing scripts into a 
+single, unified script. This simplification not only improved efficiency but also made maintenance 
+and troubleshooting much more manageable.
+
+User-Friendly Interface: To ensure that other engineers could use the script effectively, I designed
+a user-friendly interface with clear instructions and error handling. This made it easy for team 
+members to perform data migrations without extensive training.
+
+Overall, this project was not only technically challenging but also highly rewarding. It allowed me 
+to apply my problem-solving skills to enhance an essential part of the company's workflow. The 
+experience taught me valuable lessons in system integration, user interface design, and the 
+importance of optimizing processes for efficiency and productivity.

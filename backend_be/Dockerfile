@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8000
 
 # Define the command to run the application
-CMD ["python", "be.py"]
+CMD ["python3", "be.py"]
