@@ -1,6 +1,6 @@
 # fetch-projects
 
-Clone github repo
+Projects done as part of a take-home assessment by Fetch. Had 48 hour window to complete projects.
 
 **Front-end project** (frontend folder)
 Description: used Dog API to build an application where users can view an image gallery of their favorite dog breeds.
